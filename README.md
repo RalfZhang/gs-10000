@@ -2,6 +2,8 @@
 
 ## m3u
 
+`https://mirror.ghproxy.com/https://raw.githubusercontent.com/RalfZhang/gs-10000/main/gather.m3u`
+
 ## 学习资料
 
 ### IPTV 组播源转发
