@@ -1,39 +1,33 @@
 import { readFile, appendFile } from 'node:fs';
 
 const m = `#EXTINF:-1 group-title="{groupTitle}",CCTV1
-/rtp/239.255.29.40:8231
-#EXTINF:-1 group-title="{groupTitle}",CCTV1
-/rtp/239.255.30.1:8231
+/rtp/239.255.30.101:8231
 #EXTINF:-1 group-title="{groupTitle}",CCTV2
-/rtp/239.255.30.2:8231
+/rtp/239.255.30.179:8231
 #EXTINF:-1 group-title="{groupTitle}",CCTV3
 /rtp/239.255.29.12:8231
-#EXTINF:-1 group-title="{groupTitle}",CCTV4
-/rtp/239.255.30.3:8231
 #EXTINF:-1 group-title="{groupTitle}",CCTV4
 /rtp/239.255.30.83:8231
 #EXTINF:-1 group-title="{groupTitle}",CCTV5
 /rtp/239.255.29.13:8231
+#EXTINF:-1 group-title="{groupTitle}",CCTV5+
+/rtp/239.255.30.184:8231
 #EXTINF:-1 group-title="{groupTitle}",CCTV6
 /rtp/239.255.29.14:8231
 #EXTINF:-1 group-title="{groupTitle}",CCTV7
-/rtp/239.255.30.4:8231
+/rtp/239.255.30.178:8231
 #EXTINF:-1 group-title="{groupTitle}",CCTV8
 /rtp/239.255.29.15:8231
 #EXTINF:-1 group-title="{groupTitle}",CCTV9
-/rtp/239.255.30.74:8231
+/rtp/239.255.30.180:8231
 #EXTINF:-1 group-title="{groupTitle}",CCTV10
-/rtp/239.255.30.10:8231
-#EXTINF:-1 group-title="{groupTitle}",CCTV11
-/rtp/239.255.30.7:8231
+/rtp/239.255.30.181:8231
 #EXTINF:-1 group-title="{groupTitle}",CCTV12
-/rtp/239.255.30.8:8231
+/rtp/239.255.30.182:8231
 #EXTINF:-1 group-title="{groupTitle}",CCTV13
 /rtp/239.255.29.28:8231
-#EXTINF:-1 group-title="{groupTitle}",CCTV13
-/rtp/239.255.30.9:8231
-#EXTINF:-1 group-title="{groupTitle}",CCTV11
-/rtp/239.255.30.62:8231
+#EXTINF:-1 group-title="{groupTitle}",CCTV14
+/rtp/239.255.30.183:8231
 #EXTINF:-1 group-title="{groupTitle}",CCTV15
 /rtp/239.255.30.68:8231
 #EXTINF:-1 group-title="{groupTitle}",CCTV16
@@ -97,31 +91,37 @@ const m = `#EXTINF:-1 group-title="{groupTitle}",CCTV1
 #EXTINF:-1 group-title="{groupTitle}",CETV1
 /rtp/239.255.30.90:8231
 #EXTINF:-1 group-title="{groupTitle}",CCTV1
-/rtp/239.255.30.101:8231
+/rtp/239.255.29.40:8231
+#EXTINF:-1 group-title="{groupTitle}",CCTV1
+/rtp/239.255.30.1:8231
 #EXTINF:-1 group-title="{groupTitle}",CCTV2
-/rtp/239.255.30.179:8231
+/rtp/239.255.30.2:8231
+#EXTINF:-1 group-title="{groupTitle}",CCTV4
+/rtp/239.255.30.3:8231
+#EXTINF:-1 group-title="{groupTitle}",CCTV7
+/rtp/239.255.30.4:8231
+#EXTINF:-1 group-title="{groupTitle}",CCTV9
+/rtp/239.255.30.74:8231
+#EXTINF:-1 group-title="{groupTitle}",CCTV10
+/rtp/239.255.30.10:8231
+#EXTINF:-1 group-title="{groupTitle}",CCTV11
+/rtp/239.255.30.7:8231
+#EXTINF:-1 group-title="{groupTitle}",CCTV12
+/rtp/239.255.30.8:8231
+#EXTINF:-1 group-title="{groupTitle}",CCTV13
+/rtp/239.255.30.9:8231
+#EXTINF:-1 group-title="{groupTitle}",CCTV11
+/rtp/239.255.30.62:8231
 #EXTINF:-1 group-title="{groupTitle}",CCTV3
 /rtp/239.255.30.185:8231
 #EXTINF:-1 group-title="{groupTitle}",CCTV5
 /rtp/239.255.30.186:8231
 #EXTINF:-1 group-title="{groupTitle}",CCTV5
 /rtp/239.255.30.199:8231
-#EXTINF:-1 group-title="{groupTitle}",CCTV5+
-/rtp/239.255.30.184:8231
 #EXTINF:-1 group-title="{groupTitle}",CCTV6
 /rtp/239.255.30.187:8231
-#EXTINF:-1 group-title="{groupTitle}",CCTV7
-/rtp/239.255.30.178:8231
 #EXTINF:-1 group-title="{groupTitle}",CCTV8
 /rtp/239.255.30.188:8231
-#EXTINF:-1 group-title="{groupTitle}",CCTV9
-/rtp/239.255.30.180:8231
-#EXTINF:-1 group-title="{groupTitle}",CCTV10
-/rtp/239.255.30.181:8231
-#EXTINF:-1 group-title="{groupTitle}",CCTV12
-/rtp/239.255.30.182:8231
-#EXTINF:-1 group-title="{groupTitle}",CCTV14
-/rtp/239.255.30.183:8231
 #EXTINF:-1 group-title="{groupTitle}",欢笑剧场
 /rtp/239.255.29.7:8231
 #EXTINF:-1 group-title="{groupTitle}",动漫秀场
