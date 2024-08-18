@@ -1,4 +1,6 @@
-import { readFile, appendFile } from 'node:fs';
+import { readFile, writeFile } from 'node:fs';
+
+const epg = '#EXTM3U x-tvg-url="http://epg.51zmt.top:8000/e.xml.gz"';
 
 const m = `#EXTINF:-1 group-title="{groupTitle}",CCTV1
 /rtp/239.255.30.101:8231
@@ -461,8 +463,8 @@ const run = () => {
     console.log('authorities',authorities);
     const res = authorities.reduce((a, url)=>{
       return a + '\n' + generateContent(url);
-    }, '');
-    appendFile('./gather.m3u', res, (err) => {
+    }, epg);
+    writeFile('./gather.m3u', res, (err) => {
       if (err) throw err;
       console.log('done!')
     });
